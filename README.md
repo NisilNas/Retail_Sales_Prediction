@@ -128,5 +128,37 @@ A retail data which contain sales of various product of different categories and
 ##### ![Product Name Wise Sales](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/BarPlot_SalesVSProductName.png)
 #### Week_Day Wise Sales.
 ##### ![Week_Day Wise Sales](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/BarPlot_SalesVSWeekDay.png)
- * Since 'Product Name' has 3768 unique value and 'Country has 147 unique value the Bar Plot is little bit Squed
-
+ * Since 'Product Name' has 3768 unique value and 'Country has 147 unique value the Bar Plot is little bit Squed.
+### Top 10 Plot.
+#### Top 10 Countries in Sales.
+##### ![Top 10 Countries in Sales](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/Top10_SalesVSCountry.png)
+ * Top country in sales is United State.
+#### Top 10 Product Name in Sales.
+##### ![Top 10 Product Name in Sales](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/Top10_SalesVSProductName.png)
+ * Top product name in sales is Staples.
+#### Top Category in Sales.
+##### ![Top Category in Sales](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/Top10_SalesVSCategory.png)
+ * Top category in sales is Office Supplies.
+#### Top 10 Sub-Category in Sales.
+##### ![Top 10 Sub-Category in Sales](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/Top10_SalesVSSub_Category.png)
+ * Top Sub Category in sales is Binders.
+#### Top Week_Day in Sales.
+##### ![Top Week_Day in Sales](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/Top10_SalesVSWeekDay.png)
+ * Top Week Day in sales is Friday.
+### Regression Plot.
+#### Quantity VS Sales.
+##### ![Quantity VS Sales](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/RegressionPlot_QuantityVSSales.png)
+#### Discount VS Sales.
+##### ![Discount VS Sales](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/RegressionPlot_DiscountVSSales.png)
+#### Profit VS Sales.
+##### ![Profit VS Sales](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/RegressionPlot_ProfitVSSales.png)
+## Input Variable and Output Variable.
+ * Features of Input Variable( without onehotencoding ) are: Country,Category,Sub-Category,Product Name,Quantity,Discount,Profit,Week_Day.
+ * Features od Output Variable are : Sales
+## Splittig of data into train data and test.
+ * train data: 70%.
+ * test data: 30%.
+## Model.
+ * Deep Nueral Network model build using keras.
+## Conclusion.
+ * Model got predicted with accuracy 89%
