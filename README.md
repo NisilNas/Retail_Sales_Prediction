@@ -88,12 +88,45 @@ A retail data which contain sales of various product of different categories and
 
 ## Data Pre-Processing.
 ### Feature Selection.
-  * Remove un-necessary features that does not have great impact on sale and these features are 'Row ID','Order ID','Customer ID','Customer Name','Product ID'
+  * Remove un-necessary features that does not have great impact on sale and these features are 'Row ID','Order ID','Customer ID','Customer Name','Product ID'.
 
-### Feature engineering
-  * Convert datatype of 'Order date' to datetime
-  * Extract day of the week from 'Order date' and name as 'Week_day'
-  * Remove 'Order date' as machine only learn numbers
-#### Corelation
-  * Numerical:
-  ![NUMERICAL]()
+### Feature engineering.
+  * Convert datatype of 'Order date' to datetime.
+  * Extract day of the week from 'Order date' and name as 'Week_day'.
+  * Remove 'Order date' as machine only learn numbers.
+#### Corelation - Numerical.
+![NUMERICAL](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/Corelation_Numeric.png)
+ * This is corelation of Numerical Features which is 'Profit','Quantity','Discount','Sales'.
+ * From above we can see that each of the features are not corelated so there is not needed to drop these features.
+#### Corelation - Categorical
+##### ![Country VS Sales](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/Corelation_SalesVSCountry.png)
+ * Corelation between Country and sales.
+##### ![Category VS Sales](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/Corelation_SalesVSCategory.png)
+ * Corelation between Category and sales.
+##### ![Sub_Category VS Sales](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/Corelation_SalesVSSub_Category.png)
+ * Corelation between Sub_Category and sales.
+##### ![Week_Days VS Sales](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/Corelation_SalesVSWeekDay.png)
+ * Corelation between Week_Days and sales.
+ * As we can see 'Country','Category','Sub_Category','Product Name' are negatively corelated and hase no corelation with sales.
+ * 'Country','City','State' are Corelated and constitute for 'Country'.
+ * So we can drop 'City','State'.
+### Data Cleaning.
+ * Remove outlier using z score by setting value less than threshold.
+ * Remove Duplicate.
+ * Convert Object datatype to categorical datatype.
+### Natural Language Processing.
+ * OneHotEnconding using dummies function.
+## Exploratory Data Analysis.
+### Bar Plot
+#### Country Wise Sales.
+##### ![Country Wise Sales](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/BarPlot_SalesVSCountry.png)
+#### Category Wise Sales.
+##### ![Category Wise Sales](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/BarPlot_SalesVSCategory.png)
+#### Sub Category Wise Sales.
+##### ![Sub Category Wise Sales](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/BarPlot_SalesVSSub_Category.png)
+#### Product Name Wise Sales.
+##### ![Product Name Wise Sales](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/BarPlot_SalesVSProductName.png)
+#### Week_Day Wise Sales.
+##### ![Week_Day Wise Sales](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/BarPlot_SalesVSWeekDay.png)
+ * Since 'Product Name' has 3768 unique value and 'Country has 147 unique value the Bar Plot is little bit Squed
+
