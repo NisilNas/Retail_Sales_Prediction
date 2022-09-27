@@ -162,3 +162,6 @@ A retail data which contain sales of various product of different categories and
  * Deep Nueral Network model build using keras.
 ## Conclusion.
  * Model got predicted with accuracy 89%
+## Result.
+### ![Result](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/Result.png)
+### ![Result1](https://github.com/NisilNas/Retail_Sales_Prediction/blob/main/Image/Result1.png)
